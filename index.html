@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibu Basaria — Masakan Khas Batak</title>
+  <meta name="description"
+    content="Masakan rumahan khas Batak Ibu Basaria. Menerima pesanan ikan mas arsik, ayam gule, ayam gota, saksang, babi panggang, sop iga babi, dan menu khas Batak lainnya." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          🍲
+        </div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Ibu Basaria</span>
+          <span class="nav-logo-sub">Masakan Khas Batak</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#gallery">Menu</a></li>
+        <li><a href="#pricing">Paket Pesanan</a></li>
+        <li><a href="#booking">Pesan Makanan</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+      </ul>
+
+      <a href="#booking" class="btn btn-primary nav-cta">Pesan Sekarang</a>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#gallery">Menu</a></li>
+      <li><a href="#pricing">Paket Pesanan</a></li>
+      <li><a href="#booking">Pesan Makanan</a></li>
+      <li><a href="#about">Tentang Kami</a></li>
+    </ul>
+    <a href="#booking" class="btn btn-primary" style="width:100%;justify-content:center;">Pesan Sekarang</a>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Masakan Rumahan Khas Batak</span>
+        </div>
+
+        <h1 class="hero-title">
+          Ibu Basaria<br>
+          <span>Masakan Khas Batak</span>
+        </h1>
+
+        <p class="hero-desc">
+          Cita rasa kampung halaman yang selalu dirindukan. Menyajikan masakan rumahan khas Batak seperti Ikan Mas Arsik,
+          Ayam Gule, Ayam Gota, Babi Saksang, Babi Panggang, Sop Iga Babi, dan menu khas lainnya.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#gallery" class="btn btn-primary">
+            Lihat Menu
+          </a>
+          <a href="#booking" class="btn btn-outline">
+            Buat Pesanan
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="1000" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Porsi Terjual</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="10" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Tahun Pengalaman</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="99" data-suffix="%">0%</span>
+            <span class="hero-stat-label">Pelanggan Puas</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="20" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Menu Andalan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#gallery" class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-icon">↓</div>
+    </a>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <span class="section-label">Menu Andalan</span>
+        <h2 class="section-title">Menu <span>Masakan</span></h2>
+        <div class="divider"></div>
+        <p style="color:var(--text-secondary);font-size:16px;max-width:520px;margin:0 auto;line-height:1.8;">
+          Pilihan masakan khas Batak rumahan dengan rasa autentik, cocok untuk keluarga, acara, dan pesanan khusus.
+        </p>
+
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+          <button class="filter-btn" data-filter="ikan" id="filter-ikan">Ikan</button>
+          <button class="filter-btn" data-filter="ayam" id="filter-ayam">Ayam</button>
+          <button class="filter-btn" data-filter="babi" id="filter-babi">Babi</button>
+          <button class="filter-btn" data-filter="sayur" id="filter-sayur">Sayur</button>
+          <button class="filter-btn" data-filter="paket" id="filter-paket">Paket</button>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Lihat menu">
+    <button class="lightbox-close" id="lb-close" aria-label="Tutup">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Sebelumnya">‹</button>
+    <img class="lightbox-img" id="lb-img" src="" alt="" />
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Berikutnya">›</button>
+    <div class="lightbox-info">
+      <div class="lightbox-info-title" id="lb-title"></div>
+      <div class="lightbox-info-cat" id="lb-cat"></div>
+    </div>
+  </div>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-header reveal">
+        <span class="section-label">Paket Pesanan</span>
+        <h2 class="section-title">Paket <span>Masakan</span></h2>
+        <div class="divider"></div>
+        <p>Pilih paket sesuai kebutuhan acara. Harga dapat menyesuaikan jumlah porsi dan menu yang dipilih.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-tier">Paket 01</div>
+          <div class="pricing-name">Paket Keluarga</div>
+          <div class="pricing-desc">Cocok untuk makan keluarga di rumah.</div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">250K</span>
+            <span class="period">/ paket</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span>Ikan Mas Arsik / Ayam Gule</li>
+            <li><span class="check">✓</span>Daun Singkong</li>
+            <li><span class="check">✓</span>Sambal khas Batak</li>
+            <li><span class="check">✓</span>Cocok untuk 4–5 orang</li>
+            <li><span class="check">✓</span>Bisa request tingkat pedas</li>
+          </ul>
+          <button class="btn btn-outline btn-book-package" data-package="keluarga" id="book-basic">
+            Pilih Paket Keluarga
+          </button>
+        </div>
+
+        <div class="pricing-card featured reveal reveal-delay-2">
+          <span class="featured-badge">Terpopuler</span>
+          <div class="pricing-tier">Paket 02</div>
+          <div class="pricing-name">Paket Syukuran</div>
+          <div class="pricing-desc">Ideal untuk arisan, ulang tahun, ibadah keluarga, dan syukuran.</div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">750K</span>
+            <span class="period">/ paket</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span>Ikan Mas Arsik</li>
+            <li><span class="check">✓</span>Ayam Gule / Ayam Gota</li>
+            <li><span class="check">✓</span>Babi Saksang / Babi Kecap</li>
+            <li><span class="check">✓</span>Sayur Tauco / Daun Singkong</li>
+            <li><span class="check">✓</span>Cocok untuk 10–15 orang</li>
+            <li><span class="check">✓</span>Bisa tambah menu khusus</li>
+          </ul>
+          <button class="btn btn-primary btn-book-package" data-package="syukuran" id="book-standard">
+            Pilih Paket Syukuran
+          </button>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-3">
+          <div class="pricing-tier">Paket 03</div>
+          <div class="pricing-name">Paket Catering Kantor</div>
+          <div class="pricing-desc">Untuk acara kantor, rapat, gathering, atau pesanan jumlah besar.</div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">1,5 Jt</span>
+            <span class="period">/ paket</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span>Pilihan menu lengkap</li>
+            <li><span class="check">✓</span>Sop Iga Babi</li>
+            <li><span class="check">✓</span>Babi Panggang</li>
+            <li><span class="check">✓</span>Ketupat Ketan</li>
+            <li><span class="check">✓</span>Cocok untuk 25+ orang</li>
+            <li><span class="check">✓</span>Menu bisa disesuaikan</li>
+          </ul>
+          <button class="btn btn-outline btn-book-package" data-package="catering" id="book-premium">
+            Pilih Paket Catering
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="testi-header reveal">
+        <span class="section-label">Testimoni Pelanggan</span>
+        <h2 class="section-title">Kata <span>Mereka</span></h2>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="testi-track">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Masakannya enak banget, rasanya seperti masakan kampung halaman. Ikan Mas Arsiknya juara!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div>
+            <div class="testi-name">Melda</div>
+            <div class="testi-role">Pelanggan Jakarta</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Saksang dan Babi Panggangnya mantap. Bumbunya pas, porsinya juga banyak."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Andi</div>
+            <div class="testi-role">Pelanggan Bandung</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Saya pesan untuk acara keluarga, semua suka. Pengiriman tepat waktu dan makanan masih hangat."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">Sari</div>
+            <div class="testi-role">Pelanggan Medan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Ayam Gule dan Sayur Tauconya enak. Cocok banget untuk pesanan arisan."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Rina</div>
+            <div class="testi-role">Pelanggan Tangerang</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info reveal">
+          <span class="section-label">Buat Pesanan</span>
+          <h2 class="section-title">Pesan <span>Masakan</span> Kami</h2>
+          <div class="divider"></div>
+          <p>
+            Isi formulir untuk memesan makanan. Kami menerima pesanan untuk acara keluarga, arisan, syukuran,
+            ulang tahun, catering kantor, dan menu khusus sesuai permintaan.
+          </p>
+
+          <ul class="booking-contact-list">
+            <li class="booking-contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-text">
+                <div class="label">Telepon / WhatsApp</div>
+                <div class="value">0821-1131-8783</div>
+              </div>
+            </li>
+
+            <li class="booking-contact-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-text">
+                <div class="label">Email</div>
+                <div class="value">bintangsianipar30@gmail.com</div>
+              </div>
+            </li>
+
+            <li class="booking-contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-text">
+                <div class="label">Lokasi</div>
+                <div class="value">Menerima pesanan area sekitar dan sesuai kesepakatan</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="booking-form-wrap reveal reveal-delay-1">
+          <div id="form-inner">
+            <div class="form-title">Formulir Pemesanan</div>
+            <div class="form-subtitle">Semua kolom bertanda * wajib diisi</div>
+
+            <form id="booking-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Nama Lengkap <span class="required">*</span></label>
+                  <input type="text" id="form-name" class="form-input" placeholder="Nama Anda" autocomplete="name" />
+                  <div class="form-error" id="form-name-err"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-phone">Nomor WhatsApp <span class="required">*</span></label>
+                  <input type="tel" id="form-phone" class="form-input" placeholder="08xx-xxxx-xxxx" autocomplete="tel" />
+                  <div class="form-error" id="form-phone-err"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">Alamat Email <span class="required">*</span></label>
+                <input type="email" id="form-email" class="form-input" placeholder="email@contoh.com" autocomplete="email" />
+                <div class="form-error" id="form-email-err"></div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-package">Pilih Paket <span class="required">*</span></label>
+                  <select id="form-package" class="form-select">
+                    <option value="">-- Pilih Paket --</option>
+                    <option value="keluarga">Paket Keluarga — Rp 250.000</option>
+                    <option value="syukuran">Paket Syukuran — Rp 750.000</option>
+                    <option value="catering">Paket Catering Kantor — Rp 1.500.000</option>
+                    <option value="custom">Pesanan Custom / Sesuai Permintaan</option>
+                  </select>
+                  <div class="form-error" id="form-package-err"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-date">Tanggal Pengiriman <span class="required">*</span></label>
+                  <input type="date" id="form-date" class="form-input" />
+                  <div class="form-error" id="form-date-err"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-location">Alamat Pengiriman <span class="required">*</span></label>
+                <input type="text" id="form-location" class="form-input" placeholder="Masukkan alamat lengkap pengiriman" />
+                <div class="form-error" id="form-location-err"></div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-notes">Catatan Tambahan</label>
+                <textarea id="form-notes" class="form-textarea"
+                  placeholder="Contoh: pesan Ikan Mas Arsik 2 porsi, Babi Saksang 1 porsi, tidak terlalu pedas, untuk acara keluarga..."></textarea>
+              </div>
+
+              <div class="form-check-wrap">
+                <input type="checkbox" id="form-terms" class="form-check" />
+                <label class="form-check-label" for="form-terms">
+                  Saya menyetujui bahwa pesanan akan dikonfirmasi kembali melalui WhatsApp oleh Ibu Basaria.
+                </label>
+              </div>
+
+              <div class="form-error" id="form-terms-err" style="margin-bottom:16px;"></div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                <span class="submit-text">Kirim Pesanan</span>
+                <div class="spinner"></div>
+              </button>
+            </form>
+          </div>
+
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✓</div>
+            <div class="success-title">Pesanan Terkirim!</div>
+            <p class="success-desc">
+              Terima kasih! Pesanan Anda telah kami terima. Kami akan menghubungi Anda melalui WhatsApp untuk konfirmasi
+              menu, jumlah pesanan, dan jadwal pengiriman.
+            </p>
+            <button class="btn btn-outline" id="btn-new-order">Buat Pesanan Baru</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-experience-badge">
+            <span class="number">10+</span>
+            <span class="text">Tahun Memasak</span>
+          </div>
+          <img src="images/portrait1.png" alt="Ibu Basaria Masakan Khas Batak" class="about-image-main" />
+        </div>
+
+        <div class="about-content reveal reveal-delay-1">
+          <span class="section-label">Tentang Kami</span>
+          <h2 class="section-title">Masakan Rumahan <span>Penuh Cita Rasa</span></h2>
+          <div class="divider"></div>
+          <p>
+            Ibu Basaria adalah usaha rumahan yang menyajikan masakan khas Batak dengan cita rasa autentik dan bumbu
+            pilihan. Setiap masakan dibuat dengan rasa rumahan yang cocok untuk dinikmati bersama keluarga.
+          </p>
+          <p>
+            Kami menerima pesanan untuk acara keluarga, arisan, syukuran, ulang tahun, catering kantor, dan pesanan
+            khusus di luar menu yang tertera.
+          </p>
+
+          <div class="about-skills">
+            <span class="about-skill-tag">Ikan Mas Arsik</span>
+            <span class="about-skill-tag">Ayam Gule</span>
+            <span class="about-skill-tag">Ayam Gota</span>
+            <span class="about-skill-tag">Babi Saksang</span>
+            <span class="about-skill-tag">Babi Panggang</span>
+            <span class="about-skill-tag">Sop Iga Babi</span>
+            <span class="about-skill-tag">Ketupat Ketan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="margin-bottom:8px;display:inline-flex;">
+            <div class="nav-logo-icon">🍲</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Ibu Basaria</span>
+              <span class="nav-logo-sub">Masakan Khas Batak</span>
+            </div>
+          </a>
+          <p>Masakan khas Batak rumahan dengan rasa asli, harga bersahabat, dan pelayanan terbaik.</p>
+
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="social-link" aria-label="Facebook">FB</a>
+            <a href="https://wa.me/6282111318783" class="social-link" aria-label="WhatsApp">WA</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul class="footer-list">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#gallery">Menu</a></li>
+            <li><a href="#pricing">Paket Pesanan</a></li>
+            <li><a href="#booking">Pesan Makanan</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Menu Favorit</h4>
+          <ul class="footer-list">
+            <li><a href="#gallery">Ikan Mas Arsik</a></li>
+            <li><a href="#gallery">Babi Saksang</a></li>
+            <li><a href="#gallery">Babi Panggang</a></li>
+            <li><a href="#gallery">Ayam Gule</a></li>
+            <li><a href="#gallery">Sop Iga Babi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul class="footer-list">
+            <li><a href="tel:+6282111318783">0821-1131-8783</a></li>
+            <li><a href="mailto:pesanan@ibubasaria.com">pesanan@ibubasaria.com</a></li>
+            <li><a href="#">Menerima pesanan acara keluarga</a></li>
+            <li><a href="#">Menu khusus sesuai permintaan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 <span>Ibu Basaria</span>. Masakan Khas Batak.</p>
+        <div class="footer-legal">
+          <a href="#">Kebijakan Pemesanan</a>
+          <a href="#">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="back-top" aria-label="Kembali ke atas">
+    ↑
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
