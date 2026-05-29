@@ -1807,3 +1807,33 @@ footer {
 .footer-col h4 {
   color: #3a1f12;
 }
+/* Ringankan performa web */
+.hero-bg {
+  transform: none !important;
+  transition: none !important;
+}
+
+.testi-track {
+  animation: none !important;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.gallery-item img,
+.about-image-main,
+.lightbox-img {
+  will-change: auto;
+}
+
+nav,
+.mobile-nav {
+  backdrop-filter: none !important;
+}
+
+.pricing-card,
+.booking-form-wrap,
+.testi-card,
+.gallery-item {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18) !important;
+}
