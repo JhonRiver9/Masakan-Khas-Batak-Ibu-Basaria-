@@ -117,6 +117,13 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'ikan',
       catLabel: 'Menu Ikan'
     },
+        {
+      src: 'images/IkanTeriKacang.jpg',
+      title: 'Ikan Teri Kacang',
+      price: 'Rp 250.000 / kg',
+      category: 'ikan',
+      catLabel: 'Menu Ikan'
+    },
     {
       src: 'images/KetupatKetan.jpg',
       title: 'Ketupat',
