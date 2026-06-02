@@ -1919,3 +1919,97 @@ footer {
     height: 48px;
   }
 }
+
+/* ===============================
+   HARGA DI KARTU MENU
+================================ */
+
+.gallery-overlay-price{
+  display:block;
+  margin-top:8px;
+  font-size:15px;
+  font-weight:800;
+  color:#ffd36b;
+}
+
+.gallery-item:hover .gallery-overlay-price{
+  color:#fff;
+}
+
+/* ===============================
+   DAFTAR HARGA
+================================ */
+
+.menu-price-list{
+  max-width:950px;
+  margin:0 auto;
+  border-radius:24px;
+  overflow:hidden;
+  background:rgba(20,55,70,.9);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow-md);
+}
+
+.price-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:18px 24px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.price-row:last-child{
+  border-bottom:none;
+}
+
+.price-row span{
+  color:var(--cream);
+  font-weight:600;
+}
+
+.price-row small{
+  color:var(--gold-light);
+}
+
+.price-row strong{
+  color:var(--gold-light);
+  font-weight:800;
+}
+
+.price-warning{
+  text-align:center;
+  margin-top:20px;
+  color:var(--gold-light);
+  font-weight:700;
+}
+
+/* ===============================
+   HERO STATS FIX
+================================ */
+
+.hero-stats{
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  margin-top:40px;
+  width:fit-content;
+  max-width:100%;
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media(max-width:768px){
+
+  .price-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+  }
+
+  .hero-stats{
+    width:100%;
+  }
+}
