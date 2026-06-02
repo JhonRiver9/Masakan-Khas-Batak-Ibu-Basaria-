@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Ibu Basaria — Masakan Khas Batak</title>
+
   <meta name="description"
-    content="Masakan rumahan khas Batak Ibu Basaria. Menerima pesanan ikan mas arsik, ayam gule, ayam gota, saksang, babi panggang, sop iga babi, dan menu khas Batak lainnya." />
+    content="Masakan rumahan khas Batak Ibu Basaria. Menerima pesanan Ikan Mas Arsik, Ayam Gule, Ayam Gota, Sayur Tauco, Babi Saksang, Babi Panggang, Sop Iga Babi, Ikan Teri Kacang, dan menu khas Batak lainnya." />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -14,10 +17,8 @@
 
   <nav id="main-nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <div class="nav-logo-icon">
-          🍲
-        </div>
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon">🍲</div>
         <div class="nav-logo-text">
           <span class="nav-logo-name">Ibu Basaria</span>
           <span class="nav-logo-sub">Masakan Khas Batak</span>
@@ -26,7 +27,7 @@
 
       <ul class="nav-links">
         <li><a href="#gallery">Menu</a></li>
-        <li><a href="#pricing">Paket Pesanan</a></li>
+        <li><a href="#pricing">Daftar Harga</a></li>
         <li><a href="#booking">Pesan Makanan</a></li>
         <li><a href="#about">Tentang Kami</a></li>
       </ul>
@@ -42,7 +43,7 @@
   <div class="mobile-nav" id="mobile-nav">
     <ul>
       <li><a href="#gallery">Menu</a></li>
-      <li><a href="#pricing">Paket Pesanan</a></li>
+      <li><a href="#pricing">Daftar Harga</a></li>
       <li><a href="#booking">Pesan Makanan</a></li>
       <li><a href="#about">Tentang Kami</a></li>
     </ul>
@@ -66,18 +67,18 @@
         </h1>
 
         <p class="hero-desc">
-          Cita rasa kampung halaman yang selalu dirindukan. Menyajikan masakan rumahan khas Batak seperti Ikan Mas Arsik,
-          Ayam Gule, Ayam Gota, Babi Saksang, Babi Panggang, Sop Iga Babi, dan menu khas lainnya.
+          Cita rasa kampung halaman yang selalu dirindukan. Menyajikan Ikan Mas Arsik,
+          Ayam Gule, Ayam Gota, Sayur Tauco Terong Udang Pete, Babi Kecap,
+          Babi Saksang, Babi Panggang, Sop Iga Babi, Ikan Teri Kacang,
+          Ketupat, dan menu khas Batak lainnya.
         </p>
 
         <div class="hero-actions">
-          <a href="#gallery" class="btn btn-primary">
-            Lihat Menu
-          </a>
-          <a href="#booking" class="btn btn-outline">
-            Buat Pesanan
-          </a>
+          <a href="#gallery" class="btn btn-primary">Lihat Menu</a>
+          <a href="#booking" class="btn btn-outline">Buat Pesanan</a>
         </div>
+
+        <p class="price-note">*Harga dapat berubah sewaktu-waktu</p>
 
         <div class="hero-stats">
           <div class="hero-stat">
@@ -93,7 +94,7 @@
             <span class="hero-stat-label">Pelanggan Puas</span>
           </div>
           <div class="hero-stat">
-            <span class="hero-stat-number" data-target="20" data-suffix="+">0+</span>
+            <span class="hero-stat-number" data-target="11" data-suffix="+">0+</span>
             <span class="hero-stat-label">Menu Andalan</span>
           </div>
         </div>
@@ -112,8 +113,9 @@
         <span class="section-label">Menu Andalan</span>
         <h2 class="section-title">Menu <span>Masakan</span></h2>
         <div class="divider"></div>
-        <p style="color:var(--text-secondary);font-size:16px;max-width:520px;margin:0 auto;line-height:1.8;">
-          Pilihan masakan khas Batak rumahan dengan rasa autentik, cocok untuk keluarga, acara, dan pesanan khusus.
+        <p style="color:var(--text-secondary);font-size:16px;max-width:620px;margin:0 auto;line-height:1.8;">
+          Pilihan masakan khas Batak rumahan dengan rasa autentik, cocok untuk keluarga,
+          arisan, syukuran, ulang tahun, catering, dan pesanan khusus.
         </p>
 
         <div class="gallery-filters">
@@ -122,7 +124,7 @@
           <button class="filter-btn" data-filter="ayam" id="filter-ayam">Ayam</button>
           <button class="filter-btn" data-filter="babi" id="filter-babi">Babi</button>
           <button class="filter-btn" data-filter="sayur" id="filter-sayur">Sayur</button>
-          <button class="filter-btn" data-filter="paket" id="filter-paket">Paket</button>
+          <button class="filter-btn" data-filter="paket" id="filter-paket">Tambahan</button>
         </div>
       </div>
 
@@ -144,82 +146,70 @@
   <section class="pricing" id="pricing">
     <div class="container">
       <div class="pricing-header reveal">
-        <span class="section-label">Paket Pesanan</span>
-        <h2 class="section-title">Paket <span>Masakan</span></h2>
+        <span class="section-label">Daftar Harga</span>
+        <h2 class="section-title">Menu & <span>Harga</span></h2>
         <div class="divider"></div>
-        <p>Pilih paket sesuai kebutuhan acara. Harga dapat menyesuaikan jumlah porsi dan menu yang dipilih.</p>
+        <p>Berikut daftar menu Ibu Basaria. Untuk pesanan acara atau jumlah besar, harga dapat dikonfirmasi kembali melalui WhatsApp.</p>
       </div>
 
-      <div class="pricing-grid">
-        <div class="pricing-card reveal reveal-delay-1">
-          <div class="pricing-tier">Paket 01</div>
-          <div class="pricing-name">Paket Keluarga</div>
-          <div class="pricing-desc">Cocok untuk makan keluarga di rumah.</div>
-          <div class="pricing-price">
-            <span class="currency">Rp</span>
-            <span class="amount">250K</span>
-            <span class="period">/ paket</span>
-          </div>
-          <div class="pricing-divider"></div>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span>Ikan Mas Arsik / Ayam Gule</li>
-            <li><span class="check">✓</span>Daun Singkong</li>
-            <li><span class="check">✓</span>Sambal khas Batak</li>
-            <li><span class="check">✓</span>Cocok untuk 4–5 orang</li>
-            <li><span class="check">✓</span>Bisa request tingkat pedas</li>
-          </ul>
-          <button class="btn btn-outline btn-book-package" data-package="keluarga" id="book-basic">
-            Pilih Paket Keluarga
-          </button>
+      <div class="menu-price-list reveal">
+        <div class="price-row">
+          <span>Ikan Mas Arsik ⭐ <small>Favorit</small></span>
+          <strong>Rp 125.000 / ekor</strong>
         </div>
 
-        <div class="pricing-card featured reveal reveal-delay-2">
-          <span class="featured-badge">Terpopuler</span>
-          <div class="pricing-tier">Paket 02</div>
-          <div class="pricing-name">Paket Syukuran</div>
-          <div class="pricing-desc">Ideal untuk arisan, ulang tahun, ibadah keluarga, dan syukuran.</div>
-          <div class="pricing-price">
-            <span class="currency">Rp</span>
-            <span class="amount">750K</span>
-            <span class="period">/ paket</span>
-          </div>
-          <div class="pricing-divider"></div>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span>Ikan Mas Arsik</li>
-            <li><span class="check">✓</span>Ayam Gule / Ayam Gota</li>
-            <li><span class="check">✓</span>Babi Saksang / Babi Kecap</li>
-            <li><span class="check">✓</span>Sayur Tauco / Daun Singkong</li>
-            <li><span class="check">✓</span>Cocok untuk 10–15 orang</li>
-            <li><span class="check">✓</span>Bisa tambah menu khusus</li>
-          </ul>
-          <button class="btn btn-primary btn-book-package" data-package="syukuran" id="book-standard">
-            Pilih Paket Syukuran
-          </button>
+        <div class="price-row">
+          <span>Ayam Gule</span>
+          <strong>Rp 220.000 / ayam</strong>
         </div>
 
-        <div class="pricing-card reveal reveal-delay-3">
-          <div class="pricing-tier">Paket 03</div>
-          <div class="pricing-name">Paket Catering Kantor</div>
-          <div class="pricing-desc">Untuk acara kantor, rapat, gathering, atau pesanan jumlah besar.</div>
-          <div class="pricing-price">
-            <span class="currency">Rp</span>
-            <span class="amount">1,5 Jt</span>
-            <span class="period">/ paket</span>
-          </div>
-          <div class="pricing-divider"></div>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span>Pilihan menu lengkap</li>
-            <li><span class="check">✓</span>Sop Iga Babi</li>
-            <li><span class="check">✓</span>Babi Panggang</li>
-            <li><span class="check">✓</span>Ketupat Ketan</li>
-            <li><span class="check">✓</span>Cocok untuk 25+ orang</li>
-            <li><span class="check">✓</span>Menu bisa disesuaikan</li>
-          </ul>
-          <button class="btn btn-outline btn-book-package" data-package="catering" id="book-premium">
-            Pilih Paket Catering
-          </button>
+        <div class="price-row">
+          <span>Ayam Gota</span>
+          <strong>Rp 220.000 / ayam</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Sayur Tauco Terong + Udang + Pete</span>
+          <strong>Rp 150.000 / kg</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Babi Kecap</span>
+          <strong>Rp 200.000 / kg</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Babi Saksang ⭐ <small>Favorit</small></span>
+          <strong>Rp 200.000 / kg</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Babi Panggang</span>
+          <strong>Rp 220.000 / kg</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Daun Singkong</span>
+          <strong>Rp 50.000 / kg</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Sop Iga Babi</span>
+          <strong>Rp 180.000 / kg</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Ikan Teri Kacang</span>
+          <strong>Rp 250.000 / kg</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Ketupat</span>
+          <strong>Rp 4.000 / biji</strong>
         </div>
       </div>
+
+      <p class="price-warning">*Harga dapat berubah sewaktu-waktu</p>
     </div>
   </section>
 
@@ -291,8 +281,8 @@
           <h2 class="section-title">Pesan <span>Masakan</span> Kami</h2>
           <div class="divider"></div>
           <p>
-            Isi formulir untuk memesan makanan. Kami menerima pesanan untuk acara keluarga, arisan, syukuran,
-            ulang tahun, catering kantor, dan menu khusus sesuai permintaan.
+            Isi formulir untuk memesan makanan. Kami menerima pesanan untuk acara keluarga,
+            arisan, syukuran, ulang tahun, catering kantor, dan menu khusus sesuai permintaan.
           </p>
 
           <ul class="booking-contact-list">
@@ -350,13 +340,17 @@
 
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="form-package">Pilih Paket <span class="required">*</span></label>
+                  <label class="form-label" for="form-package">Jenis Pesanan <span class="required">*</span></label>
                   <select id="form-package" class="form-select">
-                    <option value="">-- Pilih Paket --</option>
-                    <option value="keluarga">Paket Keluarga — Rp 250.000</option>
-                    <option value="syukuran">Paket Syukuran — Rp 750.000</option>
-                    <option value="catering">Paket Catering Kantor — Rp 1.500.000</option>
-                    <option value="custom">Pesanan Custom / Sesuai Permintaan</option>
+                    <option value="">-- Pilih Jenis Pesanan --</option>
+                    <option value="ikan-mas-arsik">Ikan Mas Arsik</option>
+                    <option value="ayam-gule">Ayam Gule</option>
+                    <option value="ayam-gota">Ayam Gota</option>
+                    <option value="babi-saksang">Babi Saksang</option>
+                    <option value="babi-panggang">Babi Panggang</option>
+                    <option value="sop-iga-babi">Sop Iga Babi</option>
+                    <option value="ikan-teri-kacang">Ikan Teri Kacang</option>
+                    <option value="custom">Pesanan Custom / Banyak Menu</option>
                   </select>
                   <div class="form-error" id="form-package-err"></div>
                 </div>
@@ -377,7 +371,7 @@
               <div class="form-group">
                 <label class="form-label" for="form-notes">Catatan Tambahan</label>
                 <textarea id="form-notes" class="form-textarea"
-                  placeholder="Contoh: pesan Ikan Mas Arsik 2 porsi, Babi Saksang 1 porsi, tidak terlalu pedas, untuk acara keluarga..."></textarea>
+                  placeholder="Contoh: Ikan Mas Arsik 2 ekor, Babi Saksang 1 kg, Ikan Teri Kacang 1 kg, tidak terlalu pedas, untuk acara keluarga..."></textarea>
               </div>
 
               <div class="form-check-wrap">
@@ -400,8 +394,8 @@
             <div class="success-icon">✓</div>
             <div class="success-title">Pesanan Terkirim!</div>
             <p class="success-desc">
-              Terima kasih! Pesanan Anda telah kami terima. Kami akan menghubungi Anda melalui WhatsApp untuk konfirmasi
-              menu, jumlah pesanan, dan jadwal pengiriman.
+              Terima kasih! Pesanan Anda telah kami terima. Kami akan menghubungi Anda melalui WhatsApp
+              untuk konfirmasi menu, jumlah pesanan, harga, dan jadwal pengiriman.
             </p>
             <button class="btn btn-outline" id="btn-new-order">Buat Pesanan Baru</button>
           </div>
@@ -426,22 +420,24 @@
           <h2 class="section-title">Masakan Rumahan <span>Penuh Cita Rasa</span></h2>
           <div class="divider"></div>
           <p>
-            Ibu Basaria adalah usaha rumahan yang menyajikan masakan khas Batak dengan cita rasa autentik dan bumbu
-            pilihan. Setiap masakan dibuat dengan rasa rumahan yang cocok untuk dinikmati bersama keluarga.
+            Ibu Basaria adalah usaha rumahan yang menyajikan masakan khas Batak dengan cita rasa autentik
+            dan bumbu pilihan. Setiap masakan dibuat dengan rasa rumahan yang cocok untuk dinikmati bersama keluarga.
           </p>
           <p>
-            Kami menerima pesanan untuk acara keluarga, arisan, syukuran, ulang tahun, catering kantor, dan pesanan
-            khusus di luar menu yang tertera.
+            Kami menerima pesanan untuk acara keluarga, arisan, syukuran, ulang tahun,
+            catering kantor, dan pesanan khusus di luar menu yang tertera.
           </p>
 
           <div class="about-skills">
             <span class="about-skill-tag">Ikan Mas Arsik</span>
             <span class="about-skill-tag">Ayam Gule</span>
             <span class="about-skill-tag">Ayam Gota</span>
+            <span class="about-skill-tag">Sayur Tauco</span>
             <span class="about-skill-tag">Babi Saksang</span>
             <span class="about-skill-tag">Babi Panggang</span>
             <span class="about-skill-tag">Sop Iga Babi</span>
-            <span class="about-skill-tag">Ketupat Ketan</span>
+            <span class="about-skill-tag">Ikan Teri Kacang</span>
+            <span class="about-skill-tag">Ketupat</span>
           </div>
         </div>
       </div>
@@ -452,7 +448,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="nav-logo" style="margin-bottom:8px;display:inline-flex;">
+          <a href="#home" class="nav-logo" style="margin-bottom:8px;display:inline-flex;">
             <div class="nav-logo-icon">🍲</div>
             <div class="nav-logo-text">
               <span class="nav-logo-name">Ibu Basaria</span>
@@ -473,7 +469,7 @@
           <ul class="footer-list">
             <li><a href="#home">Beranda</a></li>
             <li><a href="#gallery">Menu</a></li>
-            <li><a href="#pricing">Paket Pesanan</a></li>
+            <li><a href="#pricing">Daftar Harga</a></li>
             <li><a href="#booking">Pesan Makanan</a></li>
             <li><a href="#about">Tentang Kami</a></li>
           </ul>
@@ -487,6 +483,7 @@
             <li><a href="#gallery">Babi Panggang</a></li>
             <li><a href="#gallery">Ayam Gule</a></li>
             <li><a href="#gallery">Sop Iga Babi</a></li>
+            <li><a href="#gallery">Ikan Teri Kacang</a></li>
           </ul>
         </div>
 
@@ -494,9 +491,9 @@
           <h4>Kontak</h4>
           <ul class="footer-list">
             <li><a href="tel:+6282111318783">0821-1131-8783</a></li>
-            <li><a href="mailto:pesanan@ibubasaria.com">pesanan@ibubasaria.com</a></li>
-            <li><a href="#">Menerima pesanan acara keluarga</a></li>
-            <li><a href="#">Menu khusus sesuai permintaan</a></li>
+            <li><a href="mailto:bintangsianipar30@gmail.com">bintangsianipar30@gmail.com</a></li>
+            <li><a href="#booking">Menerima pesanan acara keluarga</a></li>
+            <li><a href="#booking">Menu khusus sesuai permintaan</a></li>
           </ul>
         </div>
       </div>
@@ -504,12 +501,16 @@
       <div class="footer-bottom">
         <p class="footer-copy">© 2026 <span>Ibu Basaria</span>. Masakan Khas Batak.</p>
         <div class="footer-legal">
-          <a href="#">Kebijakan Pemesanan</a>
-          <a href="#">Syarat & Ketentuan</a>
+          <a href="#booking">Kebijakan Pemesanan</a>
+          <a href="#booking">Syarat & Ketentuan</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/6282111318783" class="wa-float" target="_blank" aria-label="Pesan via WhatsApp">
+    WA
+  </a>
 
   <button class="back-top" id="back-top" aria-label="Kembali ke atas">
     ↑
